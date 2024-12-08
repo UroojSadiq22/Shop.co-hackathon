@@ -15,8 +15,8 @@ export default function Partners() {
   //   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   // };
   return (
-    <section className="bg-gray-900 p-6">
-      <div className="md:flex md:flex-row justify-center grid grid-cols-2 lg:gap-24 gap-10">
+    <section className="bg-black p-6">
+      <div className="md:flex md:flex-row justify-center grid grid-cols-3 lg:gap-24 gap-10">
         {brands.map((i, index) => (
           // <motion.div
           //  key={index}

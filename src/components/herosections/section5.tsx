@@ -36,9 +36,9 @@ export default function Customers() {
   };
   return (
     <section className="p-6 flex flex-col gap-10">
-      <div className="flex justify-around items-center gap-40">
-        <h1 className="font-bold text-4xl my-6">OUR HAPPY CUSTOMERS</h1>
-        <div className="flex gap-6">
+      <div className="flex md:justify-around justify-center items-center md:gap-40">
+        <h1 className="font-bold md:text-4xl text-3xl my-6">OUR HAPPY CUSTOMERS</h1>
+        <div className="flex md:gap-6 gap-2">
           <ArrowLeft className="cursor-pointer" />
           <ArrowRight />
         </div>
