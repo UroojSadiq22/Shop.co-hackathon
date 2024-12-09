@@ -15,11 +15,11 @@ import { Button } from "@/components/ui/button";
 export default function Searchbar() {
   return (
     <>
-      <div className="w-[25rem] flex justify-start items-center px-2 bg-gray-200 text-black rounded-3xl">
-      <Search size={20} className="opacity-50 cursor-pointer" />
+      <div className="md:w-[25rem] flex justify-start items-center px-2 md:bg-gray-200 text-black rounded-3xl">
+      <Search size={20} className="md:opacity-50 cursor-pointer" />
       <input
           placeholder="Search for products..."
-          className="bg-gray-200 p-2 focus-within:outline-none"
+          className="hidden md:block bg-gray-200 p-2 focus-within:outline-none"
         />
        
       </div>

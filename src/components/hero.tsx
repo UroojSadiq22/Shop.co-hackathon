@@ -30,9 +30,9 @@ export default function Hero() {
   
   return (
     <>
-      <section className="w-full h-full bg-gray-100">
-        <div className="flex md:flex-row-reverse flex-col-reverse justify-around border-l-2">
-            <div className="relative">
+      <section className="w-full h-full overflow-x-hidden bg-gray-100 md:pt-10 pt-20">
+        <div className="flex lg:flex-row-reverse flex-col-reverse justify-around border-l-2">
+            <div className="relative z-20">
             <Image
             src="/cover1.jpg"
             alt="cover"
@@ -45,7 +45,7 @@ export default function Hero() {
             alt="cover"
             width={50}
             height={50}
-            className="absolute top-10 right-5"
+            className="absolute top-14 right-5"
           />
           <Image
             src="/star.png"
@@ -56,7 +56,7 @@ export default function Hero() {
           />
             </div>
          
-          <div className="flex flex-col justify-start items-center w-full md:w-[40%] gap-6 md:mt-20 mt-6 md:p-10 p-4">
+          <div className="flex flex-col justify-start items-center w-full lg:w-[40%] gap-6 md:mt-20 mt-6 md:p-10 p-4">
             <h1 className=" font-bold text-4xl">
               FIND CLOTHES THAT MATCHES YOUR STYLE
             </h1>
@@ -86,6 +86,7 @@ export default function Hero() {
                       end={item.num}
                       duration={5}
                       delay={2}
+                      suffix="+"
                       className="text-3xl font-bold"
                     />
                     

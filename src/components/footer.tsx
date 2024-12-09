@@ -21,8 +21,8 @@ const payments = [
 export default function Footer() {
   return (
     <>
-      <section className="bg-black md:w-[80%] w-[90%] rounded-lg flex md:flex-row flex-col justify-between absolute z-20 left-1/2 transform -translate-x-1/2 py-6 md:px-8 px-4">
-        <h1 className="font-bold md:mb-0 mb-6 text-white text-3xl md:w-[40%]">
+      <section className="bg-black md:w-[80%] w-[90%] rounded-lg flex lg:flex-row flex-col justify-between absolute z-20 left-1/2 transform -translate-x-1/2 py-6 md:px-8 px-4">
+        <h1 className="font-bold lg:mb-0 mb-6 text-white text-3xl lg:w-[40%]">
           STAY UP TO DATE ABOUT OUR LATEST OFFERS
         </h1>
         <div className="flex flex-col gap-4 w-full max-w-sm items-center">
@@ -45,9 +45,9 @@ export default function Footer() {
           </Button>
         </div>
       </section>
-      <main className="flex flex-col justify-center md:p-14 p-4 relative bottom-0 left-0 right-0 z-10 lg:h-[70%] bg-gray-200 md:mt-20 mt-60">
+      <main className="flex flex-col justify-center md:p-14 p-4 relative bottom-0 left-0 right-0 z-10 lg:h-[70%] bg-gray-200 lg:mt-20 mt-60">
         <div className="flex lg:flex-row flex-col justify-around items-center lg:gap-0 gap-8">
-          <div className="flex flex-col md:mt-8 mt-12 md:w-[25%] md:justify-center items-start md:gap-6 gap-2">
+          <div className="flex flex-col lg:mt-8 mt-12 lg:w-[25%] md:justify-center items-start md:gap-6 gap-2">
             <div className="text-3xl font-bold">
               <h1>SHOP.CO</h1>
             </div>
@@ -74,7 +74,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="md:flex md:flex-row grid grid-cols-2 nd:gap-14">
+          <div className="lg:flex lg:flex-row grid grid-cols-2 md:gap-14">
             <div className="flex flex-col justify-center">
               <h1 className="font-bold text-xl md:mb-8 mb-6">Company</h1>
               <ul className="flex flex-col gap-2 ">
