@@ -38,8 +38,9 @@ export default function Header(){
     )}
 
             <nav className="p-3 flex md:justify-around justify-between items-center">
-    {/* Mobile Navigation */}
-    <div className="lg:hidden">
+  <div className="flex items-center lg:gap-32 gap-2">
+      {/* Mobile Navigation */}
+      <div className="lg:hidden">
         <Sheet>
           <SheetTrigger asChild>
             <AlignJustify />
@@ -101,6 +102,7 @@ export default function Header(){
           </ul>
         ))}
       </div>
+    </div>
 
      
 

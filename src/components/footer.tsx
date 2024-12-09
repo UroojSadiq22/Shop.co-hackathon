@@ -44,9 +44,9 @@ export default function Footer() {
           </Button>
         </div>
       </section>
-      <main className="flex flex-col justify-center md:p-14 p-4 relative bottom-0 left-0 right-0 z-10 lg:h-[70%] bg-gray-200 lg:mt-20 mt-60">
+      <main className="flex flex-col justify-center md:p-14 p-4 relative bottom-0 left-0 right-0 z-10 lg:h-[70%] bg-gray-200 md:mt-24 mt-48">
         <div className="flex lg:flex-row flex-col justify-around items-center lg:gap-0 gap-8">
-          <div className="flex flex-col lg:mt-8 mt-12 lg:w-[25%] md:justify-center items-start md:gap-6 gap-2">
+          <div className="flex flex-col md:mt-20 mt-32 lg:w-[25%] md:justify-center items-start md:gap-6 gap-2">
             <div className="text-3xl font-bold">
               <h1>SHOP.CO</h1>
             </div>
@@ -73,7 +73,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:flex lg:flex-row grid grid-cols-2 md:gap-14">
+          <div className="lg:flex lg:flex-row grid grid-cols-2 md:gap-14 mt-20">
             <div className="flex flex-col justify-center">
               <h1 className="font-bold text-xl md:mb-8 mb-6">Company</h1>
               <ul className="flex flex-col gap-2 ">

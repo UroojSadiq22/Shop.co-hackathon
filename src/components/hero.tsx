@@ -43,31 +43,31 @@ export default function Hero() {
           <Image
             src="/star.png"
             alt="cover"
-            width={50}
+            width={60}
             height={50}
-            className="absolute top-14 right-5"
+            className="absolute animate-pulse top-24 right-5"
           />
           <Image
             src="/star.png"
             alt="cover"
-            width={30}
+            width={40}
             height={30}
-            className="absolute md:bottom-72 bottom-32 left-0"
+            className="absolute animate-pulse md:bottom-72 bottom-32 left-0"
           />
             </div>
          
-          <div className="flex flex-col justify-start items-center w-full lg:w-[40%] gap-6 md:mt-20 mt-6 md:p-10 p-4">
+          <div className="flex flex-col justify-start w-full lg:w-[40%] gap-6 md:mt-20 mt-6 md:p-10 p-4">
             <h1 className=" font-bold text-4xl">
               FIND CLOTHES THAT MATCHES YOUR STYLE
             </h1>
             <p>
               Browse through our diverse range of meticulously crafted garments,
-              designed to bring out your individulity and cater toyour sense of
+              designed to bring out your individulity and cater to your sense of
               style
             </p>
             <Button
               variant="outline"
-              className="w-full relative overflow-hidden group bg-black transition-all duration-300 ease-in-out px-4 py-2 rounded-3xl text-white"
+              className="md:w-[15rem] w-full relative overflow-hidden group bg-black transition-all duration-300 ease-in-out px-4 py-6 rounded-3xl text-white"
             >
               <span className="absolute inset-0 bg-gray-400 transition-transform duration-300 ease-in-out transform scale-x-0 origin-left group-hover:scale-x-100"></span>
               <h1 className="relative z-10 font-bold flex items-center gap-2">
@@ -80,7 +80,7 @@ export default function Hero() {
                   <>
                      <div
                     key={item.id}
-                    className={`flex flex-col justify-center ${item.id === 2 ? "col-span-2" : ""}`}
+                    className={`flex flex-col justify-center ${item.id === 0 ? "pr-2 border-r-2" : ""} ${item.id === 2 ? "col-span-2" : ""}`}
                   >
                     <CountUp
                       end={item.num}
