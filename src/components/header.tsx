@@ -1,8 +1,7 @@
 "use client"
 import { usePathname } from "next/navigation";
-import Combobox from "./combobox";
 import Link from "next/link";
-import { AlignJustify, CircleUserRound, Heart, ShoppingCart, X } from "lucide-react";
+import { AlignJustify, CircleUserRound, ShoppingCart, X } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import Searchbar from "./searchbar";
 import { useState } from "react";

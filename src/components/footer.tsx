@@ -4,7 +4,6 @@ import {
   Facebook,
   Github,
   Instagram,
-  Linkedin,
   Mail,
   Twitter,
 } from "lucide-react";

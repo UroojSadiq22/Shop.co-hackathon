@@ -75,7 +75,7 @@ export default function Hero() {
               </h1>
             </Button>
             <div className="md:hidden grid grid-cols-2  gap-4 m-4">
-              {stats.map((item, index) => {
+              {stats.map((item) => {
                 return (
                   <>
                      <div
