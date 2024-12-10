@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function SimpleDropdown() {
-  const [value, setValue] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
   const pathname = usePathname();

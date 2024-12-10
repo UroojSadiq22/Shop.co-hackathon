@@ -1,7 +1,7 @@
 "use client"
-import { useState } from "react";
+
 import TopPagepath from "../top-pagepath";
-import Image from "next/image";
+
 import ImagesLayout from "./imageslayout";
 
 export default function Mens() {

@@ -5,7 +5,6 @@ import { AlignJustify, CircleUserRound, ShoppingCart, X } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 import Searchbar from "./searchbar";
 import { useState } from "react";
-import ComboBox from "./combobox";
 import Combobox from "./combobox";
 
 export default function Header() {
