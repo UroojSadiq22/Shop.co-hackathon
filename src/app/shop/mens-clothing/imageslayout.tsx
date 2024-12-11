@@ -48,7 +48,7 @@ export default function ImagesLayout() {
   };
   return (
     <main className="flex lg:flex-row flex-col mt-4">
-      <div className="grid md:grid-cols-[1fr,3fr] grid-cols-1 gap-4 mb-4">
+      <div className="grid md:grid-cols-[1fr,4fr] grid-cols-1 gap-4 mb-4">
         {/* Column of Images */}
         <div className="flex md:flex-col items-center gap-2  order-2 md:order-none">
           {tshirts.map((i, index) => (
