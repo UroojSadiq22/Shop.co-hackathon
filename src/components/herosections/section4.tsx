@@ -30,7 +30,7 @@ export default function Dressstyle() {
   return (
     <section className="flex justify-center items-center">
       <div className="w-full max-w-5xl md:m-0 m-4 bg-gray-200 rounded-xl p-4 md:p-8">
-        <h1 className="font-bold md:text-4xl text-3xl text-center mb-6">
+        <h1 className="font-integral font-extrabold md:text-4xl text-3xl text-center mb-6">
           BROWSE BY DRESS STYLE
         </h1>
 

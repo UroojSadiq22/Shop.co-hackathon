@@ -92,7 +92,7 @@ export default function ImagesLayout() {
           tshirts[0].originalPrice &&
           tshirts[0].rating ? (
             <>
-              <h1 className="font-bold md:text-3xl text-2xl">{tshirts[0].title}</h1>
+              <h1 className="font-integral font-extrabold md:text-3xl text-2xl">{tshirts[0].title}</h1>
               <div className="flex items-center gap-5">
                 <p className="text-xs">{renderStars(tshirts[0].rating)}</p>
                 <p className="text-xs">

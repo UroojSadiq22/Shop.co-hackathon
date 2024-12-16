@@ -56,8 +56,8 @@ export default function Hero() {
           />
             </div>
          
-          <div className="flex flex-col justify-start w-full lg:w-[40%] gap-6 md:mt-20 mt-6 md:p-10 p-4">
-            <h1 className=" font-bold text-4xl">
+          <div className="flex flex-col justify-start w-full lg:w-[50%] gap-6 md:mt-32 mt-6 md:p-10 p-4">
+            <h1 className="font-integral font-extrabold text-6xl">
               FIND CLOTHES THAT MATCHES YOUR STYLE
             </h1>
             <p>

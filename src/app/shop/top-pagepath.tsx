@@ -7,31 +7,25 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-export default function Breadcrumbs(){
+interface BreadcrumbProps {
+  items: { label: string; href?: string }[];
+}
+
+export default function Breadcrumbs({ items }: BreadcrumbProps){
     return(
-        <Breadcrumb>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+      <Breadcrumb>
+      <BreadcrumbList>
+        {items.map((item, index) => (
+          <BreadcrumbItem key={index}>
+            {item.href ? (
+              <BreadcrumbLink href={item.href}>{item.label}</BreadcrumbLink>
+            ) : (
+              <BreadcrumbPage>{item.label}</BreadcrumbPage>
+            )}
+            {index < items.length - 1 && <BreadcrumbSeparator />}
           </BreadcrumbItem>
-          <BreadcrumbSeparator />
-
-          <BreadcrumbItem>
-            <BreadcrumbLink href="">Shop</BreadcrumbLink>
-          </BreadcrumbItem>
-
-          <BreadcrumbSeparator />
-
-          <BreadcrumbItem>
-            <BreadcrumbLink href="">Men</BreadcrumbLink>
-          </BreadcrumbItem>
-
-          <BreadcrumbSeparator />
-
-          <BreadcrumbItem>
-            <BreadcrumbPage>T-shirts</BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+        ))}
+      </BreadcrumbList>
+    </Breadcrumb>
     )
 }

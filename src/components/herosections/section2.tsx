@@ -59,7 +59,7 @@ export default function Arrivals(){
 
     return(
         <section className="md:p-6 flex flex-col justify-center items-center gap-10 border-b-2">
-            <h1 className="font-bold text-4xl my-6">NEW ARRIVALS</h1>
+            <h1 className="font-integral font-extrabold md:text-5xl text-4xl my-6">NEW ARRIVALS</h1>
 
             <div className="w-full overflow-x-auto scrollbar-hide">
         <div className="flex md:gap-2 md:flex-wrap md:justify-center">

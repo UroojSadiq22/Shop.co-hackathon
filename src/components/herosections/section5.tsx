@@ -45,7 +45,7 @@ export default function Customers() {
   return (
     <section className="p-6 my-10 flex flex-col justify-center items-center gap-10">
       <div className=" w-full flex md:justify-around justify-center items-center md:gap-40">
-        <h1 className="font-bold md:text-4xl text-3xl my-6">OUR HAPPY CUSTOMERS</h1>
+        <h1 className="font-integral font-extrabold md:text-5xl text-3xl my-6">OUR HAPPY CUSTOMERS</h1>
         <div className="flex md:gap-6 gap-2">
           <button
             className="cursor-pointer"

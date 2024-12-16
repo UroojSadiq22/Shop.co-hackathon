@@ -4,14 +4,6 @@ import Link from "next/link";
 import { CircleUserRound, ShoppingCart, X } from "lucide-react";
 import Searchbar from "./searchbar";
 import { useState } from "react";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-
 import Mobilenav from "./mobilenav";
 import Desktopnav from "./desktopnav";
 
@@ -59,7 +51,7 @@ export default function Header() {
 
           <div className="text-3xl font-bold">
             <Link href="/" className="cursor-pointer">
-              <h1>SHOP.CO</h1>
+              <h1 className="font-integral font-extrabold">SHOP.CO</h1>
             </Link>
           </div>
 

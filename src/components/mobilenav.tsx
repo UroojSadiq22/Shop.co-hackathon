@@ -64,8 +64,8 @@ export default function Mobilenav({ navLinks, pathname }: MobilenavProps) {
                   </AccordionContent>
                 </AccordionItem>
               ) : (
-                <div className="flex flex-col mt-4">
-                  <SheetClose asChild key={link.name}>
+                <div className="flex flex-col mt-4" key={link.name}>
+                  <SheetClose asChild>
                     <Link
                       href={link.path}
                       className={`text-base font-semibold ${
