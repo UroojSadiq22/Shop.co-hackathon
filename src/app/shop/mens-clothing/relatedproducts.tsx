@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { topSelling } from "@/app/data";
+import { relatedProduct } from "@/app/data";
 
-export default function Topsellings() {
+export default function RelatedProducts() {
 
    // Function to calculate the discounted price
    const getDiscountedPrice = (originalPrice: number, discount: number) => {
@@ -23,10 +22,10 @@ export default function Topsellings() {
 
   return (
     <section className="md:p-6 flex flex-col justify-center items-center gap-10">
-      <h1 className="font-integral font-extrabold md:text-5xl text-4xl my-6">TOP SELLINGS</h1>
+      <h1 className="font-integral font-extrabold md:text-5xl text-4xl my-6">YOU MIGHT ALSO LIKE</h1>
       <div className="w-full overflow-x-auto scrollbar-hide">
         <div className="flex md:gap-2 md:flex-wrap md:justify-center">
-          {topSelling.map((product, index) => (
+          {relatedProduct.map((product, index) => (
             <div
               key={index}
               className="flex flex-col min-w-[75%] sm:min-w-[30%] md:min-w-[10%] bg-white p-4 rounded-lg"
@@ -68,15 +67,7 @@ export default function Topsellings() {
           ))}
         </div>
       </div>
-      <Button
-        variant="outline"
-        className="relative overflow-hidden group transition-all duration-300 ease-in-out px-14 py-2 rounded-3xl text-black"
-      >
-        <span className="absolute inset-0 bg-gray-400 transition-transform duration-300 ease-in-out transform scale-x-0 origin-left group-hover:scale-x-100"></span>
-        <h1 className="relative z-10 font-bold flex items-center gap-2">
-          View All
-        </h1>
-      </Button>
+     
     </section>
   );
 }

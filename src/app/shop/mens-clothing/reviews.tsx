@@ -1,58 +1,59 @@
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Ellipsis, SlidersVertical } from "lucide-react";
+import { reviews } from "@/app/data";
 
 export default function Reviews() {
-  const reviews = [
-    {
-      id: 0,
-      name: "Samantha D.",
-      review:
-        "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
-      rating: 4.5,
-      datePosted: "August 14, 2023",
-    },
-    {
-      id: 1,
-      name: "Alex M.",
-      review:
-        "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
-      rating: 4.0,
-      datePosted: "August 15, 2023",
-    },
-    {
-      id: 2,
-      name: "Ethan R.",
-      review:
-        "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
-      rating: 3.5,
-      datePosted: "August 16, 2023",
-    },
-    {
-      id: 3,
-      name: "Olivia P.",
-      review:
-        "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
-      rating: 4.0,
-      datePosted: "August 17, 2023",
-    },
-    {
-      id: 3,
-      name: "Liam K.",
-      review:
-        "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
-      rating: 4.0,
-      datePosted: "August 18, 2023",
-    },
-    {
-      id: 3,
-      name: "Ava H.",
-      review:
-        "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
-      rating: 4.5,
-      datePosted: "August 19, 2023",
-    },
-  ];
+  // const reviews = [
+  //   {
+  //     id: 0,
+  //     name: "Samantha D.",
+  //     review:
+  //       "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+  //     rating: 4.5,
+  //     datePosted: "August 14, 2023",
+  //   },
+  //   {
+  //     id: 1,
+  //     name: "Alex M.",
+  //     review:
+  //       "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+  //     rating: 4.0,
+  //     datePosted: "August 15, 2023",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Ethan R.",
+  //     review:
+  //       "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+  //     rating: 3.5,
+  //     datePosted: "August 16, 2023",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Olivia P.",
+  //     review:
+  //       "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+  //     rating: 4.0,
+  //     datePosted: "August 17, 2023",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Liam K.",
+  //     review:
+  //       "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+  //     rating: 4.0,
+  //     datePosted: "August 18, 2023",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Ava H.",
+  //     review:
+  //       "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+  //     rating: 4.5,
+  //     datePosted: "August 19, 2023",
+  //   },
+  // ];
   const renderStars = (rating: number) => {
     const filledStars = Math.floor(rating);
     return Array.from({ length: filledStars }, () => "⭐️").join(" ");

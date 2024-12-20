@@ -1,10 +1,9 @@
 "use client"
-
-import Section3 from "@/components/herosections/section3";
 import TopPagepath from "../top-pagepath";
 
 import ImagesLayout from "./imageslayout";
 import Reviews from "./reviews";
+import RelatedProducts from "./relatedproducts";
 
 export default function Mens() {
   const paths = [
@@ -24,7 +23,7 @@ export default function Mens() {
 
       <div className="flex flex-col items-center"><Reviews/></div>
 
-      <div><Section3/></div>
+      <div><RelatedProducts/></div>
     </main>
   );
 }

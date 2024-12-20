@@ -60,7 +60,7 @@ export default function Cart() {
                     height={100}
                   />
                   <div>
-                    <h1 className="font-bold text-lg">{product.title}</h1>
+                    <h1 className="font-bold text-lg truncate w-full max-w-[130px] sm:max-w-[200px]">{product.title}</h1>
                     <p className="text-sm">Size: <span className="text-gray-500">{product.size}</span>
                     </p><p className="text-sm">Color: <span className="text-gray-500">{product.color}</span>
                     </p>
